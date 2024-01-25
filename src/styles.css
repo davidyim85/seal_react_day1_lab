@@ -1,0 +1,53 @@
+html {
+    background: #1c2541;
+}
+
+/* center our header and add a color to the text */
+h1{
+    display: flex;
+    justify-content: center;
+    color: #00d8ff;
+}
+
+/* align the 2 player components horizontally */
+/* have the space around the components evenly distributed */
+.players{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* we added a dynamic class name for each of our player components.
+add a color to the text  */
+.X{
+    color: #5bc0be;
+}
+.O{
+    color: #6fffe9;
+}
+/* center in the text (text-center is a way to center TEXT ONLY) */
+/* flex box is cetnering will center entire elements */
+.X,.O{
+    text-align: center;
+}
+
+
+
+.board{
+    display: grid;
+    grid-template-columns: 15vw 15vw 15vw; 
+    justify-content: center;
+    grid-template-rows: 15vw 15vw 15vw;
+}
+
+.board div{
+    border: 3px solid #00d8ff;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    color: white;
+}
+
+a{
+    color: white;
+}
